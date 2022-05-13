@@ -1,0 +1,19 @@
+---
+context: ""
+desired-versions: {}
+helm-hub-config: https://raw.githubusercontent.com/helm/hub/master/config/repo-values.yaml
+helm-version: "3"
+output-file: ""
+poll-helm-hub: true
+url:
+  - https://charts.fairwinds.com/stable
+  - https://charts.fairwinds.com/incubator
+  - https://kubernetes-charts.storage.googleapis.com
+  - https://kubernetes-charts-incubator.storage.googleapis.com
+  - https://charts.jetstack.io
+  - https://prometheus-community.github.io/helm-charts
+  - https://charts.bitnami.com/bitnami
+  - https://helm.datadoghq.com/
+  - https://kubernetes-sigs.github.io/descheduler/
+  - https://kubernetes.github.io/ingress-nginx
+wide: true

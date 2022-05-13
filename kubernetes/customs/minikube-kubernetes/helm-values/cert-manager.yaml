@@ -1,0 +1,16 @@
+global:
+  podSecurityPolicy:
+    enabled: true
+installCRDs: true
+ingressShim:
+  defaultIssuerName: "letsencrypt-staging"
+  defaultIssuerKind: "ClusterIssuer"
+  defaultIssuerGroup: "cert-manager.io"
+cainjector:
+  enabled: true
+  extraArgs:
+    - --leader-elect=false
+prometheus:
+  servicemonitor:
+    enabled: true
+    namespace: monitoring

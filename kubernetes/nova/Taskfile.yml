@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Install Nova
+    cmds:
+      - brew tap fairwindsops/tap
+      - brew install fairwindsops/tap/nova
+  run:
+    desc: Run Nova
+    cmds:
+      - nova find --helm-version=auto --config=nova.yaml
